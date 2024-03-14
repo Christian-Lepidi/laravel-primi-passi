@@ -17,5 +17,6 @@ Route::get('/', function () {
     $title = "Hello World";
     $paragraph = "first project with Laravel!";
     $usedtools = ["PHP","Blade","Laravel"];
-    return view("helloworld",compact("title","paragraph","usedtools"));
+    $frontendtools = config("frontendtools");
+    return view("helloworld",compact("title","paragraph","usedtools","frontendtools"));
 });

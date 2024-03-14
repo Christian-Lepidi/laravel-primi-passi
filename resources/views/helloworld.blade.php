@@ -15,6 +15,10 @@
   @empty
    <p><b>Nessuno strumento</b></p>
   @endforelse
- </ul>
+ <p>{{$frontendtools}}</p>
+ 
+ 
+ 
+ 
 </body>
 </html>
