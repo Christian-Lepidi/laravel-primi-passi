@@ -10,9 +10,11 @@
  <p>{{$paragraph}}</p> 
  <hr>
  <ul>
-  @foreach($usedtools as $tool)
-  <li>{{$tool}}</li>
-  @endforeach
+  @forelse($usedtools as $tool)
+   <li>{{$tool}}</li>
+  @empty
+   <p><b>Nessuno strumento</b></p>
+  @endforelse
  </ul>
 </body>
 </html>
