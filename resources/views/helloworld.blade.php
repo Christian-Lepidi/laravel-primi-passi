@@ -15,7 +15,14 @@
   @empty
    <p><b>Nessuno strumento</b></p>
   @endforelse
- <p>{{$frontendtools}}</p>
+</ul> 
+<ul>
+  @forelse($frontendtools as $frontendtool)
+   <li>{{$frontendtool}}</li>
+  @empty
+   <p><b>Nessuno strumento</b></p>
+  @endforelse
+</ul>  
  
  
  
