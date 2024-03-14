@@ -8,5 +8,11 @@
 <body>
  <h1>{{$title}}</h1>  
  <p>{{$paragraph}}</p> 
+ <hr>
+ <ul>
+  @foreach($usedtools as $tool)
+  <li>{{$tool}}</li>
+  @endforeach
+ </ul>
 </body>
 </html>
